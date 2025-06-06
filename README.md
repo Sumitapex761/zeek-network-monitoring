@@ -52,7 +52,7 @@ Logs: DNS, DHCP, Connections, Notices, Telemetry
 
 Realtime monitoring on AWS EC2
 
-🧠 Interview Lines
+
 "I built a lightweight intrusion detection system using Zeek IDS on an AWS EC2 instance. It logs and monitors real-time network traffic like DNS, DHCP, and suspicious connections, helping in proactive threat detection."
 
 📌 Tools Used
