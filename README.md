@@ -7,6 +7,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install cmake make gcc g++ flex bison libpcap-dev libssl-dev python3-dev swig zlib1g-dev curl -y
 
 2️⃣ Download & Install Zeek
+
 cd ~
 curl -L -O https://download.zeek.org/zeek-6.0.1.tar.gz
 tar -xvzf zeek-6.0.1.tar.gz
@@ -16,10 +17,12 @@ make -j$(nproc)
 sudo make install
 
 3️⃣ Add Zeek to PATH
+
 echo 'export PATH=/usr/local/zeek/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 4️⃣ Configure Interface
+
 
 sudo nano /usr/local/zeek/etc/node.cfg
 Example:- 
@@ -29,11 +32,15 @@ host=localhost
 interface=enX0  # Replace with your actual interface
 
 5️⃣ Deploy Zeek
+
 sudo zeekctl deploy
+
 6️⃣ Check Status
+
 sudo zeekctl status
 
 7️⃣ View Logs
+
 cd /usr/local/zeek/logs/current
 ls
 cat conn.log | head
